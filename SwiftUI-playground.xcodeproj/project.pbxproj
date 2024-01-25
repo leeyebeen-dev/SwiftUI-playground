@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F9A13BC72B61F8A2008B0BA2 /* PartialSheet in Frameworks */ = {isa = PBXBuildFile; productRef = F9A13BC62B61F8A2008B0BA2 /* PartialSheet */; };
 		F9DE36CA2B3113FC00BDA787 /* SwiftUI_playgroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DE36C92B3113FC00BDA787 /* SwiftUI_playgroundApp.swift */; };
 		F9DE36CC2B3113FC00BDA787 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DE36CB2B3113FC00BDA787 /* ContentView.swift */; };
 		F9DE36CE2B3113FE00BDA787 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9DE36CD2B3113FE00BDA787 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9A13BC72B61F8A2008B0BA2 /* PartialSheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = "SwiftUI-playground";
+			packageProductDependencies = (
+				F9A13BC62B61F8A2008B0BA2 /* PartialSheet */,
+			);
 			productName = "SwiftUI-playground";
 			productReference = F9DE36C62B3113FC00BDA787 /* SwiftUI-playground.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = F9DE36BD2B3113FC00BDA787;
+			packageReferences = (
+				F9A13BC52B61F8A2008B0BA2 /* XCRemoteSwiftPackageReference "PartialSheet" */,
+			);
 			productRefGroup = F9DE36C72B3113FC00BDA787 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -344,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F9A13BC52B61F8A2008B0BA2 /* XCRemoteSwiftPackageReference "PartialSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AndreaMiotto/PartialSheet";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F9A13BC62B61F8A2008B0BA2 /* PartialSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F9A13BC52B61F8A2008B0BA2 /* XCRemoteSwiftPackageReference "PartialSheet" */;
+			productName = PartialSheet;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F9DE36BE2B3113FC00BDA787 /* Project object */;
 }
